@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="safety.controller.LoginController">
+    <stylesheets>
+        <URL value="@/safety/content/app.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="412.0" layoutY="200.0" prefHeight="267.0" prefWidth="375.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="450.0" AnchorPane.topAnchor="200.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="74.37" radius="32.2375" width="56.58" />
+         </effect>
+         <children>
+            <JFXTextField fx:id="txtnomeutilizador" layoutX="60.0" layoutY="88.0" prefHeight="25.0" prefWidth="178.0" promptText="Nome Utilizador" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" />
+            <JFXPasswordField fx:id="txtsenha" layoutX="80.0" layoutY="144.0" promptText="Senha" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" />
+            <JFXButton fx:id="btnentrar" buttonType="RAISED" layoutX="80.0" layoutY="209.0" prefHeight="30.0" prefWidth="140.0" style="-fx-background-color: #00AFF0;" text="Entrar" textFill="WHITE" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="105.0" layoutY="37.0" prefHeight="30.0" prefWidth="100.0" text="INICIAR SESSÃO" textFill="#00aff0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="95.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

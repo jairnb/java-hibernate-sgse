@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" styleClass="mainFxmlClass" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safety.controller.FuncionarioController">
+    <stylesheets>
+        <URL value="@/safety/content/app.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="funcionarioTable" layoutY="50.0" prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <columns>
+            <TableColumn fx:id="nomeColumn" prefWidth="156.0" text="Nome" />
+            <TableColumn fx:id="cargoColumn" prefWidth="156.0" text="Cargo" />
+            <TableColumn fx:id="estadoColumn" prefWidth="156.0" text="Estado" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <AnchorPane prefHeight="50.0" prefWidth="1000.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="839.0" layoutY="12.0" onAction="#addFuncionario" style="-fx-background-color: #00AFF0;" text="Adicionar Funcionario" AnchorPane.rightAnchor="20.0">
+               <graphic>
+                  <MaterialDesignIconView fill="#eeeeee" size="15" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <TextField layoutX="32.0" layoutY="13.0" prefHeight="29.0" prefWidth="153.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

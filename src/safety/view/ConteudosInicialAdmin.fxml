@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BubbleChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" styleClass="mainFxmlClass" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="safety.controller.ConteudosInicialAdminController">
+    <stylesheets>
+        <URL value="@/safety/content/app.css" />
+    </stylesheets>
+   <children>
+      <AreaChart layoutX="82.0" layoutY="73.0" prefHeight="207.0" prefWidth="393.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
+      <BubbleChart layoutX="349.0" layoutY="300.0" prefHeight="231.0" prefWidth="342.0">
+        <xAxis>
+          <NumberAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BubbleChart>
+   </children>
+</AnchorPane>
